@@ -21,7 +21,7 @@ const App = () => {
     <View>
       {/* <Text style={{fontSize: 30}}>{data}</Text> */}
       <Text style={{fontSize: 30}}>{name}</Text>
-      <Button title="Update Name" onPress={nameChange}></Button>
+      <Button title="Update Name" onPress={nameChange} />
       {/* <Button title="On Press" onPress={() => fruit(40)} color={'green'} />
       <Button title="On Press" onPress={fruit} color={'red'} /> */}
     </View>
