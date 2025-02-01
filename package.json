@@ -10,8 +10,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "nativewind": "^4.1.23",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
     "react": "18.3.1",
-    "react-native": "0.76.4"
+    "react-native": "0.76.4",
+    "react-native-reanimated": "^3.16.7",
+    "react-native-safe-area-context": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

@@ -1,45 +1,58 @@
 import React, {useState} from 'react';
-import {Button, StyleSheet, Text, View, useColorScheme} from 'react-native';
+import {exStyles} from './style';
+import {
+  Button,
+  Image,
+  Pressable,
+  Text,
+  TextInput,
+  View,
+  useColorScheme,
+} from 'react-native';
 
 const StateWork = () => {
   const [text, setText] = useState('Lahore');
 
   function pressHere() {
-    setText('Sailkot');
+    setText('');
   }
-  const isDarkMode = useColorScheme() === 'dark';
+  const theme = useColorScheme();
+
+  // const isDarkMode = useColorScheme() === 'dark';
   return (
-    <View style={styles.container}>
-      <Text style={isDarkMode ? styles.whiteText : styles.darkText}>
+    <View style={exStyles.mainView}>
+      {/* <Text style={isDarkMode ? styles.whiteText : styles.darkText}>
         Hello State {text}
-      </Text>
-      <Button title="Press Here" onPress={pressHere} style={styles.button1} />
+      </Text> */}
+      {/* <Text style={{fontSize: 30}}>Hello </Text>
+      <Text style={exStyles.textwork}>Hello {text}</Text>
+      <TextInput
+        style={exStyles.textIn}
+        placeholder="Enter Value"
+        value={text}
+        onChangeText={text => setText(text)}></TextInput>
+
+      <Image
+        source={require('../../assets/images/medium.jpg')}
+        style={{
+          width: 370,
+          height: 380,
+          marginRight: 40,
+          overflow: 'hidden',
+          objectFit: 'cover',
+        }}
+      />
+
+      <Pressable
+        style={({pressed}) => [
+          exStyles.button1,
+          {backgroundColor: pressed ? '#3e8e41' : '#4CAF50'},
+        ]}
+        onPress={pressHere}>
+        <Text style={exStyles.buttonText}>Clear Field</Text>
+      </Pressable> */}
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    margin: 20,
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  whiteText: {
-    color: '#FFFFFF',
-    fontSize: 30,
-  },
-  darkText: {
-    color: '#000000',
-    fontSize: 30,
-  },
-
-  button1: {
-    width: 100,
-    marginTop: 50,
-    height: 40, // Adjusted button height
-  },
-});
 
 export default StateWork;
