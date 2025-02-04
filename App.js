@@ -5,8 +5,9 @@
 // import List from './components/List';
 // import DynamicList from './components/DynamicList';
 // import ComLoopList from './components/ComLoopList';
-import ComClass from './components/ClassComp/ComClass';
-import {UseEffectHook} from './hooks/UseEffectHook';
+// import ComClass from './components/ClassComp/ComClass';
+import {ShowHideComp} from './components/ShowHideComp';
+// import {UseEffectHook} from './hooks/UseEffectHook';
 // import SectionData from './components/SectionData';
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
     // <ComLoopList />
     // <SectionData />
     // <ComClass />
-    <UseEffectHook />
+    // <UseEffectHook />
+    <ShowHideComp />
   );
 };
 
